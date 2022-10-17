@@ -1,0 +1,33 @@
+Difference between HTTP!.1 vs HTTP2.0
+=>HTTP stands for hypertext transfer protocol and it is used in client-server communication.
+=>By using HTTP user sends the request to the server and the server sends the responses to the user.
+=> The term hypertext was coined by "Ted Nelson" in 1965.
+=>It is used to improve the communications between the client and the servers.
+
+ HTTP/1.1:
+=>HTTP/1.1 which was created in 1997.
+=> HTTP pipelining in order to further reduce lag time when using persistent connections by allowing clients to send multiple requests before waiting for each response.
+ This optimization was never considered really safe because a few web servers and many proxy servers, specially transparent proxy servers placed in Internet between clients and servers,
+  did not handle pipelined requests properly before introduction of HTTP 2.0
+=>Request methods of HTTP/1.1 specification  added five new methods: PUT, DELETE, CONNECT, OPTIONS, and TRACE. Any client can use any method and the server can be configured to support any combination of methods. 
+The request methods are always CASE SENSITIVE.
+=> the HTTP 1.1 is like a three-way handshake TCP connection.
+=> it is a bit slower than the version upgraded after this.
+=> it gives only the data which we asks.
+=>There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+=>it works on the textul format and the data is compressed by own itself.
+
+
+HTTP/2.0:
+=>it was introduced in the year 2015.
+=>It allows multiplexing so one TCP connection is required for multiple requests.
+=>it is a bit faster than the previous version.
+=>Less prone to errors.
+=>Lighter network footprint.
+=>Effective network resource utilization. 
+=>It uses PUSH frame by server that collects all multiple pages.
+=>It uses HPACK for data compression.
+=>HTTP/2 was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format.
+=> The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+
