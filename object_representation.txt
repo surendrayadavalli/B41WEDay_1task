@@ -1,0 +1,43 @@
+objects and its internal representation in javascript:
+
+=> The javascript object is represented in the flower braces{}
+=>with a key and value
+=>it is also called like the property and the property value.
+
+
+for example:
+features of a object
+createdMake: Honda 
+Model:Amaze 
+Color: White
+Fuel: petrol
+Weight: 850kg
+Mileage: 8Kmpl
+
+
+if we have an object={createdMake: "Honda", 
+Model:"Amaze",
+Color:" White",
+Fuel: "petrol",
+Weight: "850kg",
+Mileage: "8Kmpl"}
+
+property: /key              property value/value
+creadtedmake,                    Honda
+model,                           Amaze
+color,                           White
+fuel,                            petrol
+weight,                          850kg
+mileage                          8kmpl
+
+
+for adding to an property:
+ObjectName.ObjectProperty = propertyValue;
+
+
+for deleting a property:
+delete ObjectName.ObjectProperty;
+
+
+for accessing a property 
+objectName["property”]
